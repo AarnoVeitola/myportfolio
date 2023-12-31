@@ -1,0 +1,180 @@
+html { scroll-behavior: smooth; } 
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: #1D2C2F;
+  color: white;
+}
+
+nav {
+  border-radius: 0px 0px 15px 15px;
+  background-color: #192628;
+  margin-bottom: 20%;
+}
+
+footer {
+  border-radius: 15px 15px 0px 0px;
+  margin-top: 10%;
+  padding-top: 20px;
+  background-color: #192628;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.section {
+  background-color: #192628;
+  border-radius: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.subsection-title {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.footer-title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.text-box {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.main-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.scroll-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 5%;
+  margin-bottom: 50px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.btn-light {
+  color: white;
+  border-color: #12444E;
+  border-width: 0.2rem;
+  background-color: #034E5D;
+}
+
+.btn-light:hover {
+  color: #151F22;
+  background-color: white;
+  border-color: white;
+
+}
+
+.btn-down {
+  color: white;
+  height: 50px;
+  width: 50px;
+  padding: 1rem;
+  border: 0;
+  border-radius: 100%;
+  vertical-align: middle;
+  line-height: 1em;
+}
+
+.btn-sc {
+  height: 60px;
+  width: 60px;
+  padding: 1rem;
+  border-radius: 0.66666rem;
+}
+
+.fa-xl {
+  font-size: 1.66666666em;
+  line-height: 1em;
+  vertical-align: -15%;
+}
+
+/* DEVICE SPECIFIC STYLES */
+
+/* Mobile */
+.container-fluid {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+/* Tablet */
+@media (min-width:600px) {
+  .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .scroll-button {
+    margin-top: 20%;
+  }
+
+  nav {
+    margin-bottom: 15%;
+  }
+}
+
+/* Desktop */
+@media (min-width:900px) {
+  .container-fluid {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .scroll-button {
+    margin-top: 10%;
+  }
+
+  nav {
+    margin-bottom: 15%;
+  }
+}
