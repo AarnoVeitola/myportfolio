@@ -29,6 +29,25 @@ h2 {
   font-size: 4.5rem;
   font-weight: 600;
   line-height: 1.2;
+  margin-bottom: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.image {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.bio-image {
+  object-position: 40% 70%;
 }
 
 .navbar-toggler {
