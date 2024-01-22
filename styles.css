@@ -39,6 +39,10 @@ img {
   border-radius: 15px;
 }
 
+.bio-image {
+  object-position: 0 70%;
+}
+
 .image {
   padding-left: 5%;
   padding-right: 5%;
