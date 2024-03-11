@@ -19,7 +19,7 @@ body {
   background-size: cover;
   background-image: url('./background.png');
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 
 nav {
