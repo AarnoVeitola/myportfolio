@@ -2,11 +2,24 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Overpass', sans-serif;
-  background-image: url("./background.png");
+  /*background-image: url("./background.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center;*/
   color: white;
+}
+
+#background-wrap {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-image: url('./background.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
 nav {
