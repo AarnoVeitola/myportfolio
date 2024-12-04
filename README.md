@@ -1,4 +1,4 @@
-# My portfolio
+# My portfolio v2
 
 This repository contains the source code of my website hosted at *https://aarnoveitola.github.io/myportfolio*. 
 
