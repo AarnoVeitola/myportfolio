@@ -1,37 +1,33 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Aarno Veitola</title>
     
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- BACKGROUND-->
-    <div id="background-wrap"></div>
-
-    <!-- MAIN CONTAINER-->
+    <!-- MAIN CONTAINER -->
     <div class="container-fluid">
-      <!-- HEADER -->
-      <div class="margin">
-        <nav class="navbar navbar-expand-sm navbar-dark">
-          <a class="navbar-brand" href="#">Aarno Veitola</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+      <div class="flex-row">
+        <div class="container-sidebar col-2 position-fixed">
+          <div class="sidebar">
+            <ul class="nav nav-pills flex-column mb-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#about">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#background">Background</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#gallery">Gallery</a>
@@ -47,136 +43,76 @@
               </li>
             </ul>
           </div>
-        </nav>
-      </div>
 
-      <!-- TITLE PAGE -->
-      <div class="margin">
-        <div class="main-title">
-          <h1>Hey, I'm Aarno</h1>
-        </div>
-        <div class="quote">
-          <p>Creative problem solver and developer</p>
-        </div>
-        <div class="main-button">
-          <a class="btn btn-light btn-lg" href="#contact">Contact me!</a>
-        </div>
-        <div class="scroll-button">
-          <a class="btn btn-outline-light btn-down btn-floating" href="#about">
-            <i class="fa fa-chevron-down"></i>
-          </a>
-        </div>
-      </div>
-      
-      <!-- ABOUT SECTION -->
-      <div class="section" id="about">
-        <div class="margin">
-          <div class="section-title">
-            <h2>About me</h2>
-          </div>
-          <div class="bio-image-frame">
-            <div class="bio-image">
-              <img src="./profile.jpg" style="object-position: 30% 80%; border-radius: 50%;" />
-            </div>
-          </div>
-          <div class="subsection">
-            <p class="subsection-title">Bio</p>
-            <p>
-              Hey there! 
-              I'm a diverse problem solver, a design-driven developer, and an active outdoor enthusiast, seeking opportunities to develop and design solutions that bridge the gap between hard science and creative domains.
-              I live to learn and to gain extensive expertise in various fields of science, technology, and design. 
-              As an outdoor enthusiast who highly values the well being of nature and people, I strive for environmentally and societally sustainable solutions to modern problems.
-            </p>
-          </div>
-          <div class="subsection">
-            <p class="subsection-title">Education</p>
-            <p>
-              I'm a third-year student at Aalto University School of Science, currently finishing my Bachelor's degree in Engineering Physics.
-              My degree consists of fundamental studies in physics and mathematics, which have provided me excellent analytical tools and a rigorous approach for general problem solving, applicable to interdisciplinary projects.
-              I have paired my major with a minor in computer science, covering tools from front-end and back-end development to data analytics and scripting. 
-              During my studies, I have gravitated more towards applying my skill set to more creative domains, such as software development and design.
-            </p>
-          </div>
-          <div class="subsection">
-            <p class="subsection-title">Skills</p>
-            <p>
-              As a programmer, my diverse studies have equipped me with a broad skill set. 
-              Throughout my B.Sc., I completed projects spanning from full-stack web development to high-performance computing on supercomputers, utilizing <b>Python</b>. 
-              I possess proficiency in fundamental web development technologies such as <b>JavaScript</b>, <b>CSS</b>, and <b>HTML</b>.
-            </p>
-            <p>
-              Additionally, I am adept in full-stack development using <b>React</b>, <b>Redux</b>, <b>Node.js</b>, and <b>Deno</b>, as well as proficient in database management with <b>SQL</b>, <b>PostgreSQL</b>, and <b>MongoDB</b>. 
-              I have experience with version control tools such as <b>Git</b> and <b>GitHub</b>.
-              Moreover, I excel in programming languages including <b>Python</b>, <b>Scala</b>, and <b>C</b>. 
-              I have also composed scientific documents, ranging from lab reports to my Bachelor's thesis (available for reference <a href="https://urn.fi/URN:NBN:fi:aalto-202310316708">here</a>).
-              Recently, I have also become invested in <b>UI/UX</b> design (yes, this website was indeed hand-built using <b>Bootstrap</b>).
-            </p>
-            <p>
-              You can find some of my sample projects on my <a href="https://github.com/AarnoVeitola">GitHub</a>. 
-              There you can find some web applications and other programming projects, as well as samples of scientific writing and document composition. 
-            </p>
+          <div class="mb-3" style="position: fixed; bottom: 0;">
+            <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://www.linkedin.com/in/aarnoveitola/" role="button">
+              <i class="fa fa-xl fa-linkedin"></i>
+            </a>
+            <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://github.com/AarnoVeitola" role="button">
+              <i class="fa fa-xl fa-github"></i>
+            </a>
+            <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://t.me/aarnoveitola" role="button">
+              <i class="fa fa-xl fa-telegram"></i>
+            </a>
           </div>
         </div>
-      </div>
 
-      <!-- GALLERY SECTION -->
-      <div class="section" id="gallery">
-        <div class="margin">
-          <div class="section-title">
-            <h2>Gallery</h2>
+        <!-- MAIN COLUMN -->
+        <div class="container-title col-10 offset-2">
+          <!-- About menu -->
+          <div class="btn-group" role="group">
+            <a class="nav-link" type="button" data-toggle="collapse" data-target="#general" data-parent="#accordionExample" style="padding: 10px;">
+                For anyone
+            </a>
+            <a class="nav-link" type="button" data-toggle="collapse" data-target="#recruiters" data-parent="#accordionExample" style="padding: 10px;">
+                Recruiters
+            </a>
+            <a class="nav-link" type="button" data-toggle="collapse" data-target="#section3" data-parent="#accordionExample" style="padding: 10px;">
+                Section 3
+            </a>
           </div>
-          <div class="gallery">
-            <div class="gallery-frame">
-              <img src="./gallery/gallery5.jpg"></img>
+
+          <!-- Collapsible Sections -->
+          <div class="accordion mt-3" id="about">
+            <div id="general" class="collapse show" data-parent="#about">
+              <div>
+                <h1>Hey, I'm Aarno!</h1>
+              </div>
             </div>
-            <div class="gallery-frame">
-              <img src="./gallery/gallery2.jpg"></img>
+            <div id="recruiters" class="collapse" data-parent="#about">
+              <div>
+                <h1>ASDASD</h1>
+              </div>
             </div>
-            <div class="gallery-frame">
-              <img src="./gallery/gallery3.jpg"></img>
+            <div id="section3" class="collapse" data-parent="#about">
+              <div>
+                <h1>ASDASDASD</h1>
+              </div>
             </div>
-            <div class="gallery-frame">
-              <img src="./gallery/gallery4.jpg"></img>
-            </div>
-            <div class="gallery-frame">
-              <img src="./gallery/gallery1.jpg"></img>
-            </div>
-            <div class="gallery-frame">
-              <img src="./gallery/gallery6.jpg"></img>
-            </div>
-            <div class="gallery-frame">
-              <img src="./gallery/gallery7.jpg"></img>
-            </div>
+          </div>
+
+          <!-- Background -->
+          <div class="mt-3" id="background">
+            <h2>Background</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
+
+          <!-- Projects -->
+          <div class="mt-3" id="projects">
+            <h2>Projects</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
           </div>
         </div>
-      </div>
-
-      <!-- FOOTER SECTION-->
-      <div class="section">
-        <!-- FOOTER -->
-        <footer class="text-center text-white">
-          <div class="container p-4 pb-0" id="contact">
-            <section class="mb-4">
-              <p class="footer-title">Contact</p>
-              <ul style="list-style-type: none; padding-left: 0">
-                  <li>+358 452745533</li>
-                  <li>aarnoveitola(at)gmail.com</li>
-              </ul>
-            </section>
-            <section class="mb-4">
-              <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://www.linkedin.com/in/aarnoveitola/" role="button">
-                <i class="fa fa-xl fa-linkedin"></i>
-              </a>
-              <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://github.com/AarnoVeitola" role="button">
-                <i class="fa fa-xl fa-github"></i>
-              </a>
-              <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://t.me/aarnoveitola" role="button">
-                <i class="fa fa-xl fa-telegram"></i>
-              </a>
-            </section>
-          </div>
-        </footer>
       </div>
     </div>
+
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
