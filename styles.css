@@ -10,13 +10,21 @@ body {
 h1 {
   font-weight: 800;
   font-style: normal;
-  font-size: 100px;
+  font-size: 72px;
 }
 
 h2 {
   font-weight: 800;
   font-style: normal;
   font-size: 50px;
+}
+
+.position-desc {
+  width: 50%;
+}
+
+.about-section {
+  width: 80%;
 }
 
 .container-fluid {
