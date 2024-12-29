@@ -10,7 +10,7 @@ body {
 h1 {
   font-weight: 800;
   font-style: normal;
-  font-size: 72px;
+  font-size: clamp(2rem, 8vw, 5rem);
 }
 
 h2 {
@@ -19,12 +19,25 @@ h2 {
   font-size: 50px;
 }
 
+.social-columns {
+  display: flex;
+  flex-direction: column;
+  position: fixed; 
+  bottom: 0;
+}
+
+.social-row {
+  display: flex;
+  flex-direction: row;
+}
+
 .position-desc {
   width: 50%;
 }
 
 .about-section {
   width: 80%;
+  font-size: 56px;
 }
 
 .container-fluid {
@@ -34,13 +47,15 @@ h2 {
 
 .container-sidebar {
   height: 100vh; 
-  margin-top: 10%;
+  margin-top: 8rem;
 }
 
-.container-title {
+.container-main {
   height: 100vh;
   padding-top: 50px;
 }
+
+
 
 .sidebar {
   padding: 10px;
@@ -51,8 +66,9 @@ h2 {
   padding: 0px;
 }
 
-
-
+.container-footer {
+  display: none;
+}
 
 
 .dm-serif-text-regular {
@@ -65,4 +81,27 @@ h2 {
   font-family: "DM Serif Text", serif;
   font-weight: 400;
   font-style: italic;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+  .container-sidebar {
+    display: none;
+  }
+
+  .container-main {
+    flex: auto;
+    max-width: 100%;
+    margin-left: 0%;
+  }
+
+  .container-footer {
+    display: flex;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+
 }

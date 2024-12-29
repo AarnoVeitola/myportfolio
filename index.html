@@ -16,7 +16,7 @@
   <body>
     <!-- MAIN CONTAINER -->
     <div class="container-fluid">
-      <div class="flex-row">
+      <div>
         <div class="container-sidebar col-2 position-fixed">
           <div class="sidebar">
             <ul class="nav nav-pills flex-column mb-auto">
@@ -44,23 +44,27 @@
             </ul>
           </div>
 
-          <div class="mb-3" style="position: fixed; bottom: 0;">
-            <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://www.linkedin.com/in/aarnoveitola/" role="button">
-              <i class="fa fa-xl fa-linkedin"></i>
-            </a>
-            <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://github.com/AarnoVeitola" role="button">
-              <i class="fa fa-xl fa-github"></i>
-            </a>
-            <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://t.me/aarnoveitola" role="button">
-              <i class="fa fa-xl fa-telegram"></i>
-            </a>
+          <div class="social-columns mb-3">
+            <div class="social-row">
+              <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://www.linkedin.com/in/aarnoveitola/" role="button">
+                <i class="fa fa-xl fa-linkedin"></i>
+              </a>
+            </div>
+            <div class="social-row">
+              <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://github.com/AarnoVeitola" role="button">
+                <i class="fa fa-xl fa-github"></i>
+              </a>
+              <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://t.me/aarnoveitola" role="button">
+                <i class="fa fa-xl fa-telegram"></i>
+              </a>
+           </div>
           </div>
         </div>
 
         <!-- MAIN COLUMN -->
-        <div class="container-title col-10 offset-2">
+        <div class="container-main col-10 offset-2">
           <!-- About menu -->
-          <div class="btn-group" role="group">
+          <div class="btn-group m-3" role="group">
             <a class="nav-link" type="button" data-toggle="collapse" data-target="#general" data-parent="#about" style="padding: 10px;">
                 For anyone
             </a>
@@ -73,7 +77,7 @@
           </div>
 
           <!-- Collapsible Sections -->
-          <div class="accordion mt-3" id="about">
+          <div class="accordion m-3" id="about">
             <div id="general" class="collapse show" data-parent="#about">
               <div class="about-section">
                 <h1>Hey, I'm Aarno! I like solving difficult problems with beautiful solutions.</h1>
@@ -92,7 +96,7 @@
           </div>
 
           <!-- Background -->
-          <div class="mt-3" id="background">
+          <div class="m-3" id="background">
             <h2>Background</h2>
             
             
@@ -105,7 +109,7 @@
               </p>
             </div>
             
-            <div class="experience-section"></div>
+            <div class="experience-section">
               <h3>Aalto University</h3>
               <h4 class="position-title">Master's student</h4>
               <p class="position-duration">2024-present</p>
@@ -127,6 +131,32 @@
                 Pursuing a Bachelor's Degree in Engineering Physics at the School of Science. Graduated in June 2024.
               </p>
             </div>
+          </div>
+
+          <!-- FOOTER SECTION-->
+          <div class="container-footer m-3">
+            <footer class="text-center m-3">
+              <div class="container p-4 pb-0">
+                <section class="mb-4">
+                  <p class="footer-title">Contact</p>
+                  <ul style="list-style-type: none; padding-left: 0">
+                      <li>+358 452745533</li>
+                      <li>aarnoveitola(at)gmail.com</li>
+                  </ul>
+                </section>
+                <section class="mb-4">
+                  <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://www.linkedin.com/in/aarnoveitola/" role="button">
+                    <i class="fa fa-xl fa-linkedin"></i>
+                  </a>
+                  <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://github.com/AarnoVeitola" role="button">
+                    <i class="fa fa-xl fa-github"></i>
+                  </a>
+                  <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://t.me/aarnoveitola" role="button">
+                    <i class="fa fa-xl fa-telegram"></i>
+                  </a>
+                </section>
+              </div>
+            </footer>
           </div>
         </div>
       </div>
