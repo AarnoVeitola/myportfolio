@@ -10,13 +10,20 @@ body {
 h1 {
   font-weight: 800;
   font-style: normal;
-  font-size: clamp(2rem, 8vw, 5rem);
+  font-size: clamp(3rem, 6vw, 5rem);
 }
 
 h2 {
   font-weight: 800;
   font-style: normal;
   font-size: 50px;
+}
+
+.carousel-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
 }
 
 .social-columns {
@@ -36,7 +43,7 @@ h2 {
 }
 
 .about-section {
-  width: 80%;
+  width: 90%;
   font-size: 56px;
 }
 
@@ -55,7 +62,23 @@ h2 {
   padding-top: 50px;
 }
 
+.container-background {
+  height: 100%;
+}
 
+.container-gallery {
+  height: 100%;
+}
+
+.container-about {
+  height: 100%;
+}
+
+.container-footer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
 
 .sidebar {
   padding: 10px;
@@ -66,9 +89,11 @@ h2 {
   padding: 0px;
 }
 
-.container-footer {
-  display: none;
+.footer-title {
+  font-size: 32px;
 }
+
+
 
 
 .dm-serif-text-regular {
@@ -98,6 +123,10 @@ h2 {
 
   .container-footer {
     display: flex;
+  }
+
+  .position-desc {
+    width: 80%;
   }
 }
 
