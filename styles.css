@@ -19,6 +19,8 @@ h2 {
   font-size: 50px;
 }
 
+
+
 .carousel-image {
   display: block;
   margin-left: auto;
@@ -39,7 +41,7 @@ h2 {
 }
 
 .position-desc {
-  width: 50%;
+  width: 100%;
 }
 
 .about-section {
@@ -52,14 +54,35 @@ h2 {
   margin: 0;
 }
 
+/* Containers for sidebar and main page */
 .container-sidebar {
   height: 100vh; 
   margin-top: 8rem;
+  flex: 0 0 15%;
+  max-width: 15%;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .container-main {
-  height: 100vh;
+  height: 100%;
   padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 80%;
+  max-width: 80%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: 15%;
+  margin-right: 5%;
+}
+
+/* Containers for sections of main page */
+.container-about {
+  height: 100vh;
 }
 
 .container-background {
@@ -67,10 +90,6 @@ h2 {
 }
 
 .container-gallery {
-  height: 100%;
-}
-
-.container-about {
   height: 100%;
 }
 
@@ -93,8 +112,21 @@ h2 {
   font-size: 32px;
 }
 
+.experience-section {
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+}
 
+.experience-section-right {
+  margin-left: 50%;
+  text-align: right;
+}
 
+.experience-block {
+  display: flex;
+}
 
 .dm-serif-text-regular {
   font-family: "DM Serif Text", serif;
@@ -108,6 +140,35 @@ h2 {
   font-style: italic;
 }
 
+.navbar {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 10vh;
+}
+
+.navbar-dark .navbar-toggler-icon{
+  background-image: url(http://www.w3.org/2000/svg)!important;
+}
+
+.navbar-collapse {
+  transition: all 1s;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark overlay effect */
+  z-index: 1000;
+  height: 90vh;
+}
+
+.navbar-nav {
+  display: flex;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10%;
+  margin-bottom: 90%;
+}
+
 
 /* Tablet */
 @media screen and (max-width: 900px) {
@@ -118,7 +179,14 @@ h2 {
   .container-main {
     flex: auto;
     max-width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
     margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .container-background {
+    height: 100vh;
   }
 
   .container-footer {
@@ -128,6 +196,29 @@ h2 {
   .position-desc {
     width: 80%;
   }
+
+  .experience-section {
+    flex: auto;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .experience-section-right {
+    margin-left: 0%;
+    text-align: left;
+  }
+
+  .experience-block {
+    align-items: normal;
+    height: auto;
+  }
+
+  .navbar {
+    display: flex;
+  }
+  
 }
 
 /* Mobile */
