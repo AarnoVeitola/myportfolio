@@ -67,7 +67,6 @@ h2 {
 
 .container-main {
   height: 100%;
-  padding-top: 50px;
   display: flex;
   flex-direction: column;
   flex: 0 0 80%;
@@ -82,6 +81,7 @@ h2 {
 
 /* Containers for sections of main page */
 .container-about {
+  padding-top: 50px;
   height: 100vh;
 }
 
@@ -112,19 +112,19 @@ h2 {
   font-size: 32px;
 }
 
-.experience-section {
+.content-section {
   flex: 0 0 50%;
   max-width: 50%;
   position: relative;
   width: 100%;
 }
 
-.experience-section-right {
+.content-section-right {
   margin-left: 50%;
   text-align: right;
 }
 
-.experience-block {
+.content-block {
   display: flex;
 }
 
@@ -169,6 +169,10 @@ h2 {
   margin-bottom: 90%;
 }
 
+.nav-link:hover { color: #fbffffa8 !important; }
+
+.nav-link:active { color: #fbffff81 !important; }
+
 
 /* Tablet */
 @media screen and (max-width: 900px) {
@@ -197,7 +201,7 @@ h2 {
     width: 80%;
   }
 
-  .experience-section {
+  .content-section {
     flex: auto;
     max-width: 100%;
     position: relative;
@@ -205,12 +209,12 @@ h2 {
     margin-bottom: 30px;
   }
 
-  .experience-section-right {
+  .content-section-right {
     margin-left: 0%;
     text-align: left;
   }
 
-  .experience-block {
+  .content-block {
     align-items: normal;
     height: auto;
   }
