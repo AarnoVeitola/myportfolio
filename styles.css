@@ -19,7 +19,15 @@ h2 {
   font-size: 50px;
 }
 
+.position-image {
+  width: 50%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
+.position-image-aalto {
+  width: 60%;
+}
 
 .carousel-image {
   display: block;
@@ -40,7 +48,7 @@ h2 {
   flex-direction: row;
 }
 
-.position-desc {
+.text-block {
   width: 100%;
 }
 
@@ -89,6 +97,10 @@ h2 {
   height: 100%;
 }
 
+.container-projects {
+  height: 100%;
+}
+
 .container-gallery {
   height: 100%;
 }
@@ -126,6 +138,11 @@ h2 {
 
 .content-block {
   display: flex;
+  height: 100%;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .dm-serif-text-regular {
@@ -142,23 +159,38 @@ h2 {
 
 .navbar {
   display: none;
-  background-color: rgba(0, 0, 0, 0.9);
-  height: 10vh;
+  background-color: #0E0E10;;
 }
 
-.navbar-dark .navbar-toggler-icon{
-  background-image: url(http://www.w3.org/2000/svg)!important;
+
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
+
+
 
 .navbar-collapse {
-  transition: all 1s;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9); /* Dark overlay effect */
+  background-color: #0E0E10; /* Ensure visibility */
   z-index: 1000;
-  height: 90vh;
+}
+
+.navbar.scrolled {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav .nav-link {
+  color: #FBFFFF !important; /* Force white text */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fbffffa8 !important; /* Slight transparency on hover */
 }
 
 .navbar-nav {
@@ -168,6 +200,10 @@ h2 {
   margin-top: 10%;
   margin-bottom: 90%;
 }
+
+.fa-bars:hover { color: #fbffffa8 !important; }
+
+.fa-bars:active { color: #fbffff81 !important; }
 
 .nav-link:hover { color: #fbffffa8 !important; }
 
@@ -189,15 +225,11 @@ h2 {
     margin-right: 0%;
   }
 
-  .container-background {
-    height: 100vh;
-  }
-
   .container-footer {
     display: flex;
   }
 
-  .position-desc {
+  .text-block {
     width: 80%;
   }
 
@@ -222,7 +254,6 @@ h2 {
   .navbar {
     display: flex;
   }
-  
 }
 
 /* Mobile */

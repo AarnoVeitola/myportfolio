@@ -18,31 +18,27 @@
     <!-- MAIN CONTAINER -->
     <div class="container-fluid">
       <!-- Navbar -->
-      <nav class="navbar navbar-dark">
+      <nav class="navbar navbar-dark fixed-top">
         <div class="container-fluid">
-            <a class="ml-auto btn-lg" type="button" data-toggle="collapse" data-target="#navbarContent">
-              <i class="fa fa-xl fa-bars" style="color: #ffffff; font-size: 30px;"></i>
-            </a>
-        </div>
-
-        <!-- Collapsible Menu -->
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav nav-pills flex-column">
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#background">Background</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#gallery">Gallery</a>
-              </li>
+          <!-- Toggle Button -->
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-xl fa-bars" style="color: #ffffff; font-size: 30px;"></i>
+          </button>
+      
+          <!-- Collapsible Menu -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="#about">About me</a></li>
+              <li class="nav-item"><a class="nav-link" href="#background">Background</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
             </ul>
+          </div>
         </div>
       </nav>
+      
+      
+      <!-- Sidebar -->
       <div class="container-sidebar position-fixed">
         <div class="sidebar side">
           <ul class="nav nav-pills flex-column mb-auto">
@@ -84,13 +80,13 @@
         <div class="container-about" id="about">
           <!-- About menu -->
           <div class="btn-group m-3" role="group">
-            <a class="nav-link toggle-btn" type="button" data-toggle="collapse" data-target="#general" style="padding: 10px;">
+            <a class="nav-link toggle-btn mr-3" type="button" data-toggle="collapse" data-target="#general">
                 For anyone
             </a>
-            <a class="nav-link toggle-btn" type="button" data-toggle="collapse" data-target="#recruiters" style="padding: 10px;">
+            <a class="nav-link toggle-btn mr-3" type="button" data-toggle="collapse" data-target="#recruiters">
                 Recruiters
             </a>
-            <a class="nav-link toggle-btn" type="button" data-toggle="collapse" data-target="#awareness" style="padding: 10px;">
+            <a class="nav-link toggle-btn mr-3" type="button" data-toggle="collapse" data-target="#more">
                 More about me
             </a>
           </div>
@@ -107,42 +103,89 @@
                     <h1>I'm a technical problem solver and solution designer, with experience in the software and EV industry.</h1>
                 </div>
             </div>
-            <div id="awareness" class="collapse" data-parent="#about">
+            <div id="more" class="collapse" data-parent="#about">
                 <div class="about-section">
-                    <h1>I'm an advocate of the environment that surrounds us. I climb mountains and descend them on wooden planks.</h1>
+                    <h1>I'm an advocate of the environment that surrounds us. I enjoy climbing mountains and descending them on wooden planks.</h1>
                 </div>
             </div>
           </div>
-
-          
-
         </div>
         
         
         <!-- Background -->
         <div class="container-background" id="background">
           <h2 class="m-3">Background</h2>
-          <div class="content-block m-3">
+          <div class="content-block">
             <div class="content-section">
+              <img class="position-image" src="https://www.virta.global/hubfs/Website%20assets%202024/Logotypes/virta-logotype-yellow.svg" style="height:150px;">
               <h3>Virta</h3>
               <h4 class="position-title">Technical Solution Consultant Trainee</h4>
               <p class="position-duration">May 2024-present</p>
-              <p class="position-desc">
+              <p class="text-block">
                 I have been working with Virta Ltd for nearly a year, helping the company to succeed in developing their EV charging platform, and helping gain large multinational customers.
               </p>
-              <p class="position-desc">
+              <p class="text-block">
                 My focus has been in designing and implementing software solutions for large customers. Projects include, for example, API testing, hardware and roaming integrations, as well as pricing system migrations.
+              </p>
+              <ul style="display: none;">
+                <li>MySQL</li>
+                <li>JavaScript</li>
+                <li>API tools (Postman, Bruno)</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="content-block">
+            <div class="content-section content-section-right">
+              <img class="position-image position-image-aalto" src="./images/logo-86680-1.png">
+              <h3>Aalto University</h3>
+              <h4 class="position-title">Master's student</h4>
+              <p class="position-duration">September 2024-present</p>
+              <p class="text-block">
+                Pursuing a Master's Degree in Human-Computer Interaction at the School of Science. Studying topics such as Interactive AI, Machine Learning, Deep Learning, User-Interfaces, User-Centered Design, and Service Design.
+              </p>
+              <p class="text-block"></p>
+                I have also worked as a Research Assistant (Department of Applied Physics) and a Teaching Assistant (Department of Computer Science), building fusion and plasma physics research tools with Python, and teaching basics programming with Scala.
+              </p>
+              <ul style="display: none;">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React</li>
+                <li>SQL</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="container-projects" id="projects">
+          <h2 class="m-3">Projects</h2>
+          <div class="content-block">
+            <div class="content-section">
+              <h3>My portfolio</h3>
+              <p class="text-block">
+                This website contains my portfolio, and simultaneously acts as it's own Interactive Design and Front-End development project.
+              </p>
+              <p class="text-block">
+                The UI is built using Bootstrap v4.0, HTML, CSS, and a sprinkle of custom JavaScript. While the UI design is very subtle and simplistic, composed with a basic web application structure, the UI is built to be adaptive to the device viewport and browser. It works flawlessly on any device with a modern browser, while retaining a clean and usable design. It is a single-page application, which demonstrates my diverse skill set as a programmer.
               </p>
             </div>
           </div>
           
-          <div class="content-block m-3" style="text-align: right;">
+          <div class="content-block m-3">
             <div class="content-section content-section-right">
-              <h3>Aalto University</h3>
-              <h4 class="position-title">Master's student</h4>
-              <p class="position-duration">September 2024-present</p>
-              <p class="position-desc">
-                Pursuing a Master's Degree in Human-Computer Interaction at the School of Science. Studying topics such as AI and Machine Learning, User-Interfaces, User-Centered Design, and Service Design.
+              <h3>focusEGG</h3>
+              <p class="text-block">
+                <i>focusEGG</i> is a product we worked with for a User-centered Product Development Project course for Aalto University. It is a modern pomodoro timer, which aims to aid students experiencing difficulties with focus and short attention span. 
+              </p>
+              <p class="text-block">
+                Due to information flood caused by digitalization and social media, these symptoms are experienced by a significant portion of university students. <i>focusEGG</i> tackles these issues by providing a modern portable concentration timer, which integrates directly with your smartphone and is very accessible. The product consists of the timer itself and a mobile application, which communicate via Bluetooth.
+              </p>
+              <p class="text-block">
+                The product development was done with two User-Centered Design cycles, consisting of user-research, design and prototyping, and usability testing with real users.
               </p>
             </div>
           </div>
@@ -228,31 +271,15 @@
       </div>
     </div>
 
-    <!-- jQuery (Only Load Once, and Use Full Version, NOT Slim) -->
+    <!-- Imports -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
-    <!-- Correct Popper.js Version (Bootstrap 4 Needs v1.16, Remove v2.x) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Bootstrap JS (Only Load Once) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
 
-    <!-- Preventing closing 'About' section -->
-    <script>
-      $(document).ready(function () {
-          $(".toggle-btn").on("click", function (event) {
-              let targetSelector = $(this).attr("data-target");
-              let target = $(targetSelector);
-              console.log(target);
-
-              if (target.hasClass("show")) {
-                  event.stopPropagation()
-                  event.preventDefault(); // Prevent closing if already open
-                  console.log("Prevented collapse from closing.");
-              }
-          });
-      });
-    </script>
-
+    <!-- Custom JavaScript -->
+    <script src="./js/preventSectionClose.js"></script>
+    <script src="./js/navbarShadow.js"></script>
+    <script src="./js/navbarClose.js"></script>
+    <script src="./js/scroll.js"></script>
   </body>
 </html>
