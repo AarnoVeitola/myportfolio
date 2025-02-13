@@ -2,4 +2,6 @@
 
 This repository contains the source code of my website hosted at *https://aarnoveitola.github.io/myportfolio*. 
 
-The website is a static website hosted using *GitHub Pages*. The site is hand built using *Bootstrap*, and in addition it uses an external CSS stylesheet *styles.css*. The site itself is written inside *index.html*.
+You can find the source code for the latest deployment of this project in the branch *portfoliov2*.
+
+The website is a single-page application, hosted via *GitHub Pages*. The application is built using basic CSS, Bootstrap v4.0, as well as some custom JavaScript.
