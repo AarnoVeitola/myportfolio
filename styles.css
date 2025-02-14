@@ -26,16 +26,6 @@ h2 {
   font-size: 50px;
 }
 
-.position-image {
-  width: 50%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.position-image-aalto {
-  width: 60%;
-}
-
 .carousel-image {
   display: block;
   margin-left: auto;
@@ -155,7 +145,7 @@ h2 {
   padding: 1rem 1.5rem;
   font-size: 2.5rem;
   line-height: 1;
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
 }
 
 .contact-btn:focus {
@@ -183,24 +173,35 @@ h2 {
 }
 
 .content-section {
-  flex: 0 0 50%;
   max-width: 50%;
   position: relative;
   width: 100%;
-}
-
-.content-section-right {
-  margin-left: 50%;
-  text-align: right;
-}
-
-.content-block {
-  display: flex;
-  height: 100%;
   margin-top: 1rem;
   margin-bottom: 3rem;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.content-block {
+  display: flex;
+  height: auto;
+}
+
+.content-block-right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.position {
+  height: auto;
+  margin-bottom: 5rem;
+}
+
+.position-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%
 }
 
 .dm-serif-text-regular {
@@ -299,14 +300,15 @@ h2 {
     margin-bottom: 30px;
   }
 
-  .content-section-right {
-    margin-left: 0%;
-    text-align: left;
-  }
-
   .content-block {
     align-items: normal;
     height: auto;
+    flex-direction: column;
+  }
+
+  .content-block-right {
+    flex-direction: column;
+    text-align: left;
   }
 
   .navbar {
