@@ -1,10 +1,17 @@
+:root {
+  --background: #0E0E10;
+  --text-color: #FBFFFF;
+  --text-color-hover: #fbffffa8;
+  --text-color-active: #fbffff81;
+}
+
 html { scroll-behavior: smooth; } 
 
 body {
   font-family: 'DM Serif Text', serif;
   font-weight: 400;
-  background-color: #0E0E10;
-  color: #FBFFFF;
+  background-color: var(--background);
+  color: var(--text-color);
 }
 
 h1 {
@@ -105,6 +112,57 @@ h2 {
   height: 100%;
 }
 
+.container-contact {
+  height: 100vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-content {
+  background-color: var(--background);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+.modal-header {
+  border-bottom: 1px solid var(--text-color);
+}
+
+.close {
+  color: var(--text-color);
+  opacity: 1;
+}
+.close:hover {
+  color: var(--text-color-hover);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-footer {
+  border-top: 1px solid var(--text-color);
+}
+
+.contact-btn {
+  border-color: var(--text-color);
+  padding: 1rem 1.5rem;
+  font-size: 2.5rem;
+  line-height: 1;
+  border-radius: 0.75rem;
+}
+
+.contact-btn:focus {
+  outline: none !important;
+  box-shadow: none !important
+}
+
 .container-footer {
   display: none;
   justify-content: center;
@@ -116,7 +174,7 @@ h2 {
 }
 
 .nav-link {
-  color: #FBFFFF;
+  color: var(--text-color);
   padding: 0px;
 }
 
@@ -159,7 +217,7 @@ h2 {
 
 .navbar {
   display: none;
-  background-color: #0E0E10;;
+  background-color: var(--background);;
 }
 
 
@@ -177,7 +235,7 @@ h2 {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: #0E0E10; /* Ensure visibility */
+  background-color: var(--background); /* Ensure visibility */
   z-index: 1000;
 }
 
@@ -190,7 +248,7 @@ h2 {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #fbffffa8 !important; /* Slight transparency on hover */
+  color: var(--text-color-hover) !important; /* Slight transparency on hover */
 }
 
 .navbar-nav {
@@ -201,13 +259,13 @@ h2 {
   margin-bottom: 90%;
 }
 
-.fa-bars:hover { color: #fbffffa8 !important; }
+.fa-bars:hover { color: var(--text-color-hover) !important; }
 
-.fa-bars:active { color: #fbffff81 !important; }
+.fa-bars:active { color: var(--text-color-active) !important; }
 
-.nav-link:hover { color: #fbffffa8 !important; }
+.nav-link:hover { color: var(--text-color-hover) !important; }
 
-.nav-link:active { color: #fbffff81 !important; }
+.nav-link:active { color: var(--text-color-active) !important; }
 
 
 /* Tablet */

@@ -31,7 +31,7 @@
               <li class="nav-item"><a class="nav-link" href="#about">About me</a></li>
               <li class="nav-item"><a class="nav-link" href="#background">Background</a></li>
               <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-              <!-- <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li> -->
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -51,9 +51,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
-            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
           </ul>
         </div>
 
@@ -224,12 +224,51 @@
           </div>
         </div> -->
 
-        <div style="height:100px">
-
+        <!-- Contact section -->
+        <div class="container-contact" id="contact">
+          <div>
+            <button class="btn btn-outline-light btn-sc btn-floating contact-btn m-1" data-toggle="modal" data-target="#contactModal" role="button">
+              Contact me!
+            </button>
+          </div>
         </div>
 
+        <!-- Contact modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="myModalLabel">Contact</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="contact-info">
+                      <h3>Aarno Veitola</h3>
+                      <p class="mb-0">aarnoveitola@gmail.com</p>
+                      <p>+358 452745533</p>
+                      <div>
+                        <div class="social-row">
+                          <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://www.linkedin.com/in/aarnoveitola/" role="button">
+                            <i class="fa fa-xl fa-linkedin"></i>
+                          </a>
+                          <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://github.com/AarnoVeitola" role="button">
+                            <i class="fa fa-xl fa-github"></i>
+                          </a>
+                          <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://t.me/aarnoveitola" role="button">
+                            <i class="fa fa-xl fa-telegram"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
         <!-- FOOTER SECTION-->
-        <div class="container-footer m-3">
+        <!-- <div class="container-footer m-3">
           <footer class="text-center m-3 mt-5">
             <div class="container p-4 pb-0">
               <section class="mb-4">
@@ -252,7 +291,7 @@
               </section>
             </div>
           </footer>
-        </div>
+        </div> -->
       </div>
     </div>
 
