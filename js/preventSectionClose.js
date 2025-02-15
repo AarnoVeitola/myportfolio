@@ -6,7 +6,7 @@ $(document).ready(function () {
 
         if (target.hasClass("show") && targetSelector !== "#navbarContent") {
             event.stopPropagation()
-            event.preventDefault(); // Prevent closing if already open
+            event.preventDefault();
             console.log("Prevented collapse from closing.");
         }
     });

@@ -26,6 +26,31 @@ h2 {
   font-size: clamp(3rem, 6vw, 5rem);
 }
 
+.viewport {
+  height: 100vh;
+}
+
+.fade-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-scroll-slow.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-scroll.hidden {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
 .carousel-image {
   display: block;
   margin-left: auto;
@@ -87,7 +112,6 @@ h2 {
 /* Containers for sections of main page */
 .container-about {
   padding-top: 50px;
-  height: 100vh;
 }
 
 .container-background {
