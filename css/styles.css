@@ -3,6 +3,7 @@
 :root {
   --background: #0E0E10;
   --text-color: #FBFFFF;
+  /* --text-color: #ffffe3; */
   --text-color-hover: #fbffffa8;
   --text-color-active: #fbffff81;
 }
@@ -306,31 +307,28 @@ button {
   .container-main {
     flex: auto;
     max-width: 100%;
-    padding-right: 25px;
-    padding-left: 25px;
-    margin-left: 0%;
-    margin-right: 0%;
+    width: auto;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .container-footer {
     display: flex;
   }
 
-  .text-block {
-    width: 80%;
-  }
-
   .content-section {
     flex: auto;
     max-width: 100%;
-    position: relative;
-    width: 100%;
-    margin-bottom: 30px;
+    width: auto;
+    margin-bottom: 1rem;
   }
 
   .content-block {
     align-items: normal;
     height: auto;
+    width: 100%;
     flex-direction: column;
   }
 
@@ -350,5 +348,13 @@ button {
 
 /* Mobile */
 @media screen and (max-width: 600px) {
-
+  .container-main {
+    flex: auto;
+    width: auto;
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
