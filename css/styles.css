@@ -276,6 +276,10 @@ button {
   color: var(--text-color-hover) !important; /* Slight transparency on hover */
 }
 
+.nav-link:active {
+  color: var(--text-color-active) !important;
+}
+
 .navbar-nav {
   display: flex;
   text-align: center;
@@ -343,6 +347,10 @@ button {
 
   .container-about {
     padding-top: 50px;
+  }
+
+  .viewport {
+    height: 150vh;
   }
 }
 
