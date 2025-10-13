@@ -47,23 +47,23 @@ button {
 
 .fade-scroll {
   opacity: 0;
-  transform: translateY(50px);
+  /*transform: translateY(50px);*/
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .fade-scroll.visible {
   opacity: 1;
-  transform: translateY(0);
+  /*transform: translateY(0);*/
 }
 
 .fade-scroll-slow.visible {
   opacity: 1;
-  transform: translateY(0);
+  /*transform: translateY(0);*/
 }
 
 .fade-scroll.hidden {
   opacity: 0;
-  transform: translateY(-50px);
+  /*transform: translateY(-50px);*/
 }
 
 /* Social buttons */
