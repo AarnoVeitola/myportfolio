@@ -9,7 +9,11 @@ export default [
     languageOptions: {
       globals: globals.browser,
       ecmaVersion: "latest",
-      sourceType: "script"
+      sourceType: "script",
+      globals: {
+        ...globals.browser,
+        ...globals.jquery
+      }
     },
     rules: {
       "no-unused-vars": "warn",
@@ -18,6 +22,6 @@ export default [
   },
   prettier,
   {
-    ignores: ["node_modules/**", "dist/**", "build/**"]
+    ignores: ["node_modules/**", "dist/**", "build/**", "eslint.config.*"]
   }
 ];
