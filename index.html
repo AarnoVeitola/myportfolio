@@ -1,182 +1,468 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Aarno Veitola</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon-16x16.png?" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- BACKGROUND-->
-    <div id="background-wrap"></div>
-
-    <!-- MAIN CONTAINER-->
+    <!-- MAIN CONTAINER -->
     <div class="container-fluid">
-      <!-- HEADER -->
-      <div class="margin">
-        <nav class="navbar navbar-expand-sm navbar-dark">
-          <a class="navbar-brand" href="#">Aarno Veitola</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      <!-- Navbar -->
+      <nav class="navbar navbar-dark fixed-top">
+        <div class="container-fluid">
+          <!-- Toggle Button -->
+          <button
+            class="navbar-toggler ml-auto"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i
+              class="fa fa-xl fa-bars"
+              style="color: #ffffff; font-size: 30px"
+            ></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+
+          <!-- Collapsible Menu -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#about">About me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#gallery">Gallery</a>
+                <a class="nav-link" href="#background">Background</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/AarnoVeitola">GitHub</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/aarnoveitola/">LinkedIn</a>
-              </li>
             </ul>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
 
-      <!-- TITLE PAGE -->
-      <div class="margin">
-        <div class="main-title">
-          <h1>Hey, I'm Aarno</h1>
+      <!-- Sidebar -->
+      <div class="container-sidebar position-fixed">
+        <div class="sidebar side">
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#background">Background</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="quote">
-          <p>Creative problem solver and developer</p>
-        </div>
-        <div class="main-button">
-          <a class="btn btn-light btn-lg" href="#contact">Contact me!</a>
-        </div>
-        <div class="scroll-button">
-          <a class="btn btn-outline-light btn-down btn-floating" href="#about">
-            <i class="fa fa-chevron-down"></i>
-          </a>
-        </div>
-      </div>
-      
-      <!-- ABOUT SECTION -->
-      <div class="section" id="about">
-        <div class="margin">
-          <div class="section-title">
-            <h2>About me</h2>
+
+        <div class="social-columns mb-3">
+          <div class="social-row">
+            <a
+              class="btn btn-outline-light btn-sc btn-floating m-1"
+              href="https://www.linkedin.com/in/aarnoveitola/"
+              role="button"
+            >
+              <i class="fa fa-xl fa-linkedin"></i>
+            </a>
           </div>
-          <div class="bio-image-frame">
-            <div class="bio-image">
-              <img src="./profile.jpg" style="object-position: 30% 80%; border-radius: 50%;" />
-            </div>
-          </div>
-          <div class="subsection">
-            <p class="subsection-title">Bio</p>
-            <p>
-              Hey there! 
-              I'm a diverse problem solver, a design-driven developer, and an active outdoor enthusiast, seeking opportunities to develop and design solutions that bridge the gap between hard science and creative domains.
-              I live to learn and to gain extensive expertise in various fields of science, technology, and design. 
-              As an outdoor enthusiast who highly values the well being of nature and people, I strive for environmentally and societally sustainable solutions to modern problems.
-            </p>
-          </div>
-          <div class="subsection">
-            <p class="subsection-title">Education</p>
-            <p>
-              I'm a third-year student at Aalto University School of Science, currently finishing my Bachelor's degree in Engineering Physics.
-              My degree consists of fundamental studies in physics and mathematics, which have provided me excellent analytical tools and a rigorous approach for general problem solving, applicable to interdisciplinary projects.
-              I have paired my major with a minor in computer science, covering tools from front-end and back-end development to data analytics and scripting. 
-              During my studies, I have gravitated more towards applying my skill set to more creative domains, such as software development and design.
-            </p>
-          </div>
-          <div class="subsection">
-            <p class="subsection-title">Skills</p>
-            <p>
-              As a programmer, my diverse studies have equipped me with a broad skill set. 
-              Throughout my B.Sc., I completed projects spanning from full-stack web development to high-performance computing on supercomputers, utilizing <b>Python</b>. 
-              I possess proficiency in fundamental web development technologies such as <b>JavaScript</b>, <b>CSS</b>, and <b>HTML</b>.
-            </p>
-            <p>
-              Additionally, I am adept in full-stack development using <b>React</b>, <b>Redux</b>, <b>Node.js</b>, and <b>Deno</b>, as well as proficient in database management with <b>SQL</b>, <b>PostgreSQL</b>, and <b>MongoDB</b>. 
-              I have experience with version control tools such as <b>Git</b> and <b>GitHub</b>.
-              Moreover, I excel in programming languages including <b>Python</b>, <b>Scala</b>, and <b>C</b>. 
-              I have also composed scientific documents, ranging from lab reports to my Bachelor's thesis (available for reference <a href="https://urn.fi/URN:NBN:fi:aalto-202310316708">here</a>).
-              Recently, I have also become invested in <b>UI/UX</b> design (yes, this website was indeed hand-built using <b>Bootstrap</b>).
-            </p>
-            <p>
-              You can find some of my sample projects on my <a href="https://github.com/AarnoVeitola">GitHub</a>. 
-              There you can find some web applications and other programming projects, as well as samples of scientific writing and document composition. 
-            </p>
+          <div class="social-row">
+            <a
+              class="btn btn-outline-light btn-sc btn-floating m-1"
+              href="https://github.com/AarnoVeitola"
+              role="button"
+            >
+              <i class="fa fa-xl fa-github"></i>
+            </a>
+            <a
+              class="btn btn-outline-light btn-sc btn-floating m-1"
+              href="https://t.me/aarnoveitola"
+              role="button"
+            >
+              <i class="fa fa-xl fa-telegram"></i>
+            </a>
           </div>
         </div>
       </div>
 
-      <!-- GALLERY SECTION -->
-      <div class="section" id="gallery">
-        <div class="margin">
-          <div class="section-title">
-            <h2>Gallery</h2>
+      <!-- MAIN COLUMN -->
+      <div class="container-main">
+        <!-- About-->
+        <div class="container-about" id="about">
+          <!-- About menu -->
+          <div class="btn-group m-3" role="group">
+            <a
+              class="nav-link toggle-btn mr-3"
+              type="button"
+              data-toggle="collapse"
+              data-target="#general"
+            >
+              For anyone
+            </a>
+            <a
+              class="nav-link toggle-btn mr-3"
+              type="button"
+              data-toggle="collapse"
+              data-target="#recruiters"
+            >
+              Recruiters
+            </a>
+            <a
+              class="nav-link toggle-btn mr-3"
+              type="button"
+              data-toggle="collapse"
+              data-target="#more"
+            >
+              More about me
+            </a>
           </div>
-          <div class="gallery">
-            <div class="gallery-frame">
-              <img src="./gallery/gallery5.jpg"></img>
+
+          <!-- Collapsible Sections -->
+          <div class="accordion fade-scroll m-3">
+            <div id="general" class="collapse show" data-parent="#about">
+              <div class="about-section">
+                <h1>
+                  Hey, I'm Aarno! <br />I like solving difficult problems with
+                  beautiful solutions.
+                </h1>
+              </div>
             </div>
-            <div class="gallery-frame">
-              <img src="./gallery/gallery2.jpg"></img>
+            <div id="recruiters" class="collapse" data-parent="#about">
+              <div class="about-section">
+                <h1>
+                  I'm a technical problem solver and solution designer, with
+                  experience in the software and EV industry.
+                </h1>
+              </div>
             </div>
-            <div class="gallery-frame">
-              <img src="./gallery/gallery3.jpg"></img>
-            </div>
-            <div class="gallery-frame">
-              <img src="./gallery/gallery4.jpg"></img>
-            </div>
-            <div class="gallery-frame">
-              <img src="./gallery/gallery1.jpg"></img>
-            </div>
-            <div class="gallery-frame">
-              <img src="./gallery/gallery6.jpg"></img>
-            </div>
-            <div class="gallery-frame">
-              <img src="./gallery/gallery7.jpg"></img>
+            <div id="more" class="collapse" data-parent="#about">
+              <div class="about-section">
+                <h1>
+                  I enjoy adventuring in the mountains, skiing on snow, and
+                  surfing the oceans. I also love good music, great company, and
+                  tasty food.
+                </h1>
+              </div>
             </div>
           </div>
         </div>
+
+        <div style="height: 110vh"></div>
+
+        <!-- Background -->
+        <div class="container-background" id="background">
+          <h2 class="fade-scroll m-3">Background</h2>
+          <div class="position fade-scroll">
+            <div class="content-block">
+              <div class="content-section">
+                <h3>Virta Ltd</h3>
+                <h4 class="position-title">
+                  Junior Technical Solution Consultant
+                </h4>
+                <p class="position-duration">May 2025-Aug 2025</p>
+                <p class="text-block">
+                  I continued working at Virta for another summer, this time as
+                  a junior. I spent most of my summer on a software development
+                  project for the Pricing team, while also working on tasks like
+                  roaming integrations and testing.
+                </p>
+                <p class="text-block">
+                  During the summer, I built internal full-stack tools using
+                  React, TypeScript, PHP, GraphQL, and Laravel, deploying via
+                  Kubernetes and AWS. I delivered automation solutions that
+                  streamlined customer migration workflows across pricing
+                  systems.
+                </p>
+                <p class="text-block">
+                  I got to contribute to all phases of the software development
+                  life-cycle, from discovery and requirements analysis through
+                  design, development, and testing. Working on these topics with
+                  seasoned software engineers, architects, and testers was a
+                  very eye-opening experience, leaving me hungry for more.
+                </p>
+                <h4 class="position-title">
+                  Technical Solution Consultant Trainee
+                </h4>
+                <p class="position-duration">May 2024-Apr 2025</p>
+                <p class="text-block">
+                  I worked as a trainee at Virta Ltd for a year, helping the
+                  company to succeed in developing their EV charging platform,
+                  and helping gain large multinational customers.
+                </p>
+                <p class="text-block">
+                  My tasks included mainly roaming integrations (OCPI, Hubject),
+                  charging hardware integration and testing (OCPP), and
+                  pricing-system migrations. Additionally, I also led technical
+                  requirement analysis and customer consultations to define
+                  solutions aligned with Virta’s product strategy.
+                </p>
+              </div>
+              <div class="content-section">
+                <div class="position-image-container">
+                  <img
+                    src="./images/virta_logo_white_borderless_RGB.svg"
+                    style="width: 70%"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="position fade-scroll">
+            <div class="content-block content-block-right">
+              <div class="content-section">
+                <h3>Aalto University</h3>
+                <h4 class="position-title">Master's student</h4>
+                <p class="position-duration">Sep 2024-present</p>
+                <p class="text-block">
+                  Pursuing a Master's Degree in Human-Computer Interaction at
+                  the School of Science. Studying topics such as Interactive AI,
+                  Machine Learning, Deep Learning, User-Interfaces,
+                  User-Centered Design, and Service Design.
+                </p>
+                <p class="text-block">
+                  I have also worked as a Research Assistant (Department of
+                  Applied Physics), building fusion and plasma physics research
+                  tools with Python, and as a Teaching Assistant (Department of
+                  Computer Science), teaching basics programming with Scala.
+                </p>
+                <h4 class="position-title">Barchelor's student</h4>
+                <p class="position-duration">Sep 2021-Jun 2024</p>
+                <p class="text-block">
+                  I started my university journey by studying a bachelor's
+                  degree in Applied Physics. I did not no exactly what I wanted
+                  to pursue, so I decided to challenge myself in the subjects I
+                  enjoyed the most, namely physics, mathematics, and
+                  programming.
+                </p>
+                <p class="text-block">
+                  During the three years of studying physics, I studied the most
+                  mathematics and programming I could fit in my studies, and
+                  eventually ended up minoring in Computer Science. This lead me
+                  to continue with a master's degree in Computer Science.
+                </p>
+              </div>
+              <div class="content-section">
+                <div class="position-image-container">
+                  <img src="./images/logo-86680-1.png" style="width: 80%" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="position fade-scroll">
+            <div class="content-block">
+              <div class="content-section">
+                <h3>Instituto Superior Técnico</h3>
+                <h4 class="position-title">Exchange studies</h4>
+                <p class="position-duration">Sep 2025-Jan 2026</p>
+                <p class="text-block">
+                  I decided to take a break from studying at Aalto, and ventured
+                  off to Instituto Superior Técnico in Lisbon for half-a-year of
+                  exchange studies. Here, I am studying topics such as Data
+                  Analysis and Integration, Software Arcitechture, and Software
+                  Security.
+                </p>
+                <p class="text-block">
+                  Outside of school, I spend a lot of time in the water,
+                  surfing, as well as exploring the city and local culture.
+                </p>
+              </div>
+              <div class="content-section">
+                <div class="position-image-container">
+                  <img src="./images/IST_A_RGB_NEG.png" style="width: 80%" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="height: 110vh"></div>
+
+        <!-- Projects -->
+        <div class="container-projects" id="projects">
+          <h2 class="fade-scroll m-3">Projects</h2>
+          <div class="position fade-scroll">
+            <div class="content-block">
+              <div class="content-section">
+                <h3>My portfolio</h3>
+                <p class="text-block">
+                  This website contains my portfolio, and simultaneously acts as
+                  it's own Interactive Design and Front-End development project.
+                </p>
+                <p class="text-block">
+                  The UI is built using Bootstrap v4.0, HTML, CSS, and a
+                  sprinkle of custom JavaScript. While the UI design is very
+                  subtle and simplistic, composed with a basic web application
+                  structure, the UI is built to be adaptive to the device
+                  viewport and browser. It works flawlessly on any device with a
+                  modern browser, while retaining a clean and usable design. It
+                  is a single-page application, which demonstrates my diverse
+                  skill set as a programmer.
+                </p>
+              </div>
+              <div class="content-section">
+                <div class="position-image-container">
+                  <img src="./images/portfolio.png" style="width: 80%" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="position fade-scroll">
+            <div class="content-block content-block-right">
+              <div class="content-section">
+                <h3>focusEGG</h3>
+                <p class="text-block">
+                  <i>focusEGG</i> is a product we worked with for a
+                  User-centered Product Development Project course for Aalto
+                  University. It is a modern pomodoro timer, which aims to aid
+                  students experiencing difficulties with focus and short
+                  attention span.
+                </p>
+                <p class="text-block">
+                  Due to information flood caused by digitalization and social
+                  media, these symptoms are experienced by a significant portion
+                  of university students. <i>focusEGG</i> tackles these issues
+                  by providing a modern portable concentration timer, which
+                  integrates directly with your smartphone and is very
+                  accessible. The product consists of the timer itself and a
+                  mobile application, which communicate via Bluetooth.
+                </p>
+                <p class="text-block">
+                  The product development was done with two User-Centered Design
+                  cycles, consisting of user-research, design and prototyping,
+                  and usability testing with real users. The prototype is built
+                  using an <i>Arduino Nano</i> microcontroller, programmed with
+                  <i>C++</i>.
+                </p>
+                <p class="text-block">
+                  My role in this project was in User Research, User Testing,
+                  Prototype Design, and Hardware assembly.
+                </p>
+              </div>
+              <div class="content-section">
+                <div class="position-image-container">
+                  <img src="./images/focusEGG.png" style="width: 80%" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="height: 110vh"></div>
       </div>
 
-      <!-- FOOTER SECTION-->
-      <div class="section">
-        <!-- FOOTER -->
-        <footer class="text-center text-white">
-          <div class="container p-4 pb-0" id="contact">
-            <section class="mb-4">
-              <p class="footer-title">Contact</p>
-              <ul style="list-style-type: none; padding-left: 0">
-                  <li>+358 452745533</li>
-                  <li>aarnoveitola(at)gmail.com</li>
-              </ul>
-            </section>
-            <section class="mb-4">
-              <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://www.linkedin.com/in/aarnoveitola/" role="button">
-                <i class="fa fa-xl fa-linkedin"></i>
-              </a>
-              <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://github.com/AarnoVeitola" role="button">
-                <i class="fa fa-xl fa-github"></i>
-              </a>
-              <a class="btn btn-outline-light btn-sc btn-floating m-1" href="https://t.me/aarnoveitola" role="button">
-                <i class="fa fa-xl fa-telegram"></i>
-              </a>
-            </section>
+      <!-- Contact -->
+      <div class="container-contact" id="contact">
+        <button
+          class="btn btn-outline-light btn-sc btn-floating contact-btn fade-scroll m-1"
+          data-toggle="modal"
+          data-target="#contactModal"
+          role="button"
+        >
+          Contact me!
+        </button>
+      </div>
+
+      <!-- Contact modal -->
+      <div
+        class="modal fade"
+        id="contactModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="myModalLabel">Contact</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="contact-info">
+                <h3>Aarno Veitola</h3>
+                <p class="mb-0">aarnoveitola@gmail.com</p>
+                <p>+358 452745533</p>
+                <div>
+                  <div class="social-row">
+                    <a
+                      class="btn btn-outline-light btn-sc btn-floating m-1"
+                      href="https://www.linkedin.com/in/aarnoveitola/"
+                      role="button"
+                    >
+                      <i class="fa fa-xl fa-linkedin"></i>
+                    </a>
+                    <a
+                      class="btn btn-outline-light btn-sc btn-floating m-1"
+                      href="https://github.com/AarnoVeitola"
+                      role="button"
+                    >
+                      <i class="fa fa-xl fa-github"></i>
+                    </a>
+                    <a
+                      class="btn btn-outline-light btn-sc btn-floating m-1"
+                      href="https://t.me/aarnoveitola"
+                      role="button"
+                    >
+                      <i class="fa fa-xl fa-telegram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </footer>
+        </div>
       </div>
     </div>
+
+    <!-- Imports -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="./js/preventSectionClose.js"></script>
+    <script src="./js/navbarShadow.js"></script>
+    <script src="./js/navbarClose.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/fadeScroll.js"></script>
+    <script src="./js/fontReady.js"></script>
   </body>
 </html>
