@@ -10,11 +10,11 @@ The project intentionally avoids heavy frameworks and build systems. Instead, it
 
 The portfolio website includes:
 
-* A responsive layout built with HTML and CSS
-* Custom styling layered on top of Bootstrap
-* Small JavaScript enhancements for navigation and interaction
-* A custom web font setup
-* A modern development workflow using Prettier, ESLint, and Stylelint
+- A responsive layout built with HTML and CSS
+- Custom styling layered on top of Bootstrap
+- Small JavaScript enhancements for navigation and interaction
+- A custom web font setup
+- A modern development workflow using Prettier, ESLint, and Stylelint
 
 The site is designed to be simple to deploy (for example, via GitHub Pages) and easy to extend as new sections or projects are added.
 
@@ -24,19 +24,19 @@ The site is designed to be simple to deploy (for example, via GitHub Pages) and 
 
 ### Core Technologies
 
-* **HTML5** – semantic markup
-* **CSS3** – custom styles and layout
-* **JavaScript (ES2021)** – browser-side interactivity
-* **Bootstrap** – responsive layout utilities and components
-* **jQuery** – small DOM interactions and event handling
+- **HTML5** – semantic markup
+- **CSS3** – custom styles and layout
+- **JavaScript (ES2021)** – browser-side interactivity
+- **Bootstrap** – responsive layout utilities and components
+- **jQuery** – small DOM interactions and event handling
 
 ### Tooling
 
-* **Prettier** – automatic code formatting
-* **ESLint (flat config)** – JavaScript linting and best practices
-* **Stylelint** – CSS linting and consistency checks
-* **npm** – dependency and script management
-* **VS Code** – primary development environment
+- **Prettier** – automatic code formatting
+- **ESLint (flat config)** – JavaScript linting and best practices
+- **Stylelint** – CSS linting and consistency checks
+- **npm** – dependency and script management
+- **VS Code** – primary development environment
 
 ---
 
@@ -66,9 +66,9 @@ The site is designed to be simple to deploy (for example, via GitHub Pages) and 
 
 This project uses a clear separation of responsibilities between tools:
 
-* **Prettier** handles *all formatting* (HTML, CSS, JavaScript, JSON)
-* **ESLint** focuses on JavaScript correctness and potential bugs
-* **Stylelint** focuses on CSS correctness and maintainable patterns
+- **Prettier** handles _all formatting_ (HTML, CSS, JavaScript, JSON)
+- **ESLint** focuses on JavaScript correctness and potential bugs
+- **Stylelint** focuses on CSS correctness and maintainable patterns
 
 Formatting is applied automatically on save in VS Code, while linting can be run manually or via npm scripts.
 
@@ -85,10 +85,10 @@ npm run lint:css    # Run Stylelint only
 
 ## Development Notes
 
-* JavaScript is written for the browser environment and loaded via `<script>` tags.
-* jQuery is provided globally (via CDN), and ESLint is configured accordingly.
-* CSS rules favor clarity and maintainability over strict theoretical ordering.
-* The tooling setup is intentionally simple and suitable for small to medium static sites.
+- JavaScript is written for the browser environment and loaded via `<script>` tags.
+- jQuery is provided globally (via CDN), and ESLint is configured accordingly.
+- CSS rules favor clarity and maintainability over strict theoretical ordering.
+- The tooling setup is intentionally simple and suitable for small to medium static sites.
 
 ---
 
@@ -96,10 +96,10 @@ npm run lint:css    # Run Stylelint only
 
 The goals of this project are:
 
-* Present a clean and professional personal portfolio
-* Demonstrate attention to code quality and maintainability
-* Use modern tooling without unnecessary complexity
-* Keep the project easy to understand for future contributors or reviewers
+- Present a clean and professional personal portfolio
+- Demonstrate attention to code quality and maintainability
+- Use modern tooling without unnecessary complexity
+- Keep the project easy to understand for future contributors or reviewers
 
 ---
 

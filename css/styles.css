@@ -208,6 +208,28 @@ button {
   padding: 0;
 }
 
+.external-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.external-link:hover,
+.external-link:focus {
+  color: var(--text-color-hover);
+  text-decoration: underline;
+}
+
+.external-link:active {
+  color: var(--text-color-active);
+  text-decoration: underline;
+}
+
+.external-link span {
+  margin-left: 0.25rem;
+  font-size: 0.9em;
+}
+
 .footer-title {
   font-size: 32px;
 }
