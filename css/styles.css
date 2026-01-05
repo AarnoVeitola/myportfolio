@@ -88,6 +88,7 @@ button {
 
 .text-block {
   width: 100%;
+  text-align: justify;
 }
 
 .about-section {
@@ -248,7 +249,8 @@ button {
 
 .content-block-right {
   flex-direction: row-reverse;
-  text-align: right;
+
+  /* text-align: right; */
 }
 
 .position {
