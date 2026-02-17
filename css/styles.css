@@ -39,10 +39,6 @@ button {
   margin: 0;
 }
 
-.viewport {
-  height: 100vh;
-}
-
 /* Scrolling behaviour */
 
 .fade-scroll {
@@ -55,12 +51,6 @@ button {
 }
 
 .fade-scroll.visible {
-  opacity: 1;
-
-  /* transform: translateY(0); */
-}
-
-.fade-scroll-slow.visible {
   opacity: 1;
 
   /* transform: translateY(0); */
@@ -89,6 +79,10 @@ button {
 .text-block {
   width: 100%;
   text-align: justify;
+}
+
+.section-spacer {
+  height: 110vh;
 }
 
 .about-section {
@@ -134,10 +128,6 @@ button {
   height: 100%;
 }
 
-.container-gallery {
-  height: 100%;
-}
-
 .container-contact {
   height: 100vh;
 
@@ -175,10 +165,6 @@ button {
   align-items: center;
 }
 
-.modal-footer {
-  border-top: 1px solid var(--text-color);
-}
-
 .contact-btn {
   border-color: var(--text-color);
   padding: 1rem 1.5rem;
@@ -192,12 +178,6 @@ button {
   box-shadow: none !important;
 }
 
-.container-footer {
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
 .sidebar {
   padding: 10px;
   font-family: Satoshi-Regular, sans-serif;
@@ -207,6 +187,17 @@ button {
   color: var(--text-color);
   font-family: Satoshi-Regular, sans-serif;
   padding: 0;
+}
+
+.toggle-btn {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.toggle-btn:focus-visible {
+  outline: 2px solid var(--text-color);
+  outline-offset: 4px;
 }
 
 .external-link {
@@ -229,10 +220,6 @@ button {
 .external-link span {
   margin-left: 0.25rem;
   font-size: 0.9em;
-}
-
-.footer-title {
-  font-size: 32px;
 }
 
 .content-section {
@@ -265,9 +252,36 @@ button {
   height: 100%;
 }
 
+.position-image {
+  width: 80%;
+  height: auto;
+}
+
+.position-image-narrow {
+  width: 70%;
+}
+
+.position-image-placeholder {
+  width: 80%;
+  min-height: 10rem;
+  border: 1px dashed var(--text-color-hover);
+  border-radius: 0.5rem;
+  color: var(--text-color-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
 .navbar {
   display: none;
   background-color: var(--background);
+}
+
+.navbar-toggle-icon {
+  color: var(--text-color);
+  font-size: 30px;
 }
 
 .navbar-toggler {
@@ -295,6 +309,12 @@ button {
 
 .nav-link:hover {
   color: var(--text-color-hover) !important;
+}
+
+.nav-link:focus-visible {
+  color: var(--text-color-hover) !important;
+  outline: 2px solid var(--text-color);
+  outline-offset: 4px;
 }
 
 .nav-link:active {
@@ -338,10 +358,6 @@ button {
     padding-right: 35px;
   }
 
-  .container-footer {
-    display: flex;
-  }
-
   .content-section {
     flex: auto;
     max-width: 100%;
@@ -368,9 +384,16 @@ button {
   .container-about {
     padding-top: 50px;
   }
+}
 
-  .viewport {
-    height: 150vh;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .fade-scroll {
+    transition: none;
+    opacity: 1;
   }
 }
 

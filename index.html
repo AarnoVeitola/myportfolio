@@ -40,8 +40,8 @@
             aria-label="Toggle navigation"
           >
             <i
-              class="fa fa-xl fa-bars"
-              style="color: #ffffff; font-size: 30px"
+              class="fa fa-xl fa-bars navbar-toggle-icon"
+              aria-hidden="true"
             ></i>
           </button>
 
@@ -67,7 +67,7 @@
 
       <!-- Sidebar -->
       <div class="container-sidebar position-fixed">
-        <div class="sidebar side">
+        <div class="sidebar">
           <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
               <a class="nav-link" href="#about">About me</a>
@@ -87,33 +87,33 @@
         <div class="social-columns mb-3">
           <div class="social-row">
             <a
-              class="btn btn-outline-light btn-sc btn-floating m-1"
+              class="btn btn-outline-light btn-floating m-1"
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.linkedin.com/in/aarnoveitola/"
-              role="button"
+              aria-label="Open LinkedIn profile"
             >
-              <i class="fa fa-xl fa-linkedin"></i>
+              <i class="fa fa-xl fa-linkedin" aria-hidden="true"></i>
             </a>
           </div>
           <div class="social-row">
             <a
-              class="btn btn-outline-light btn-sc btn-floating m-1"
+              class="btn btn-outline-light btn-floating m-1"
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/AarnoVeitola"
-              role="button"
+              aria-label="Open GitHub profile"
             >
-              <i class="fa fa-xl fa-github"></i>
+              <i class="fa fa-xl fa-github" aria-hidden="true"></i>
             </a>
             <a
-              class="btn btn-outline-light btn-sc btn-floating m-1"
+              class="btn btn-outline-light btn-floating m-1"
               target="_blank"
               rel="noopener noreferrer"
               href="https://t.me/aarnoveitola"
-              role="button"
+              aria-label="Open Telegram profile"
             >
-              <i class="fa fa-xl fa-telegram"></i>
+              <i class="fa fa-xl fa-telegram" aria-hidden="true"></i>
             </a>
           </div>
         </div>
@@ -125,30 +125,36 @@
         <div class="container-about" id="about">
           <!-- About menu -->
           <div class="btn-group m-3" role="group">
-            <a
+            <button
               class="nav-link toggle-btn mr-3"
               type="button"
               data-toggle="collapse"
               data-target="#general"
+              aria-controls="general"
+              aria-expanded="true"
             >
               For anyone
-            </a>
-            <a
+            </button>
+            <button
               class="nav-link toggle-btn mr-3"
               type="button"
               data-toggle="collapse"
               data-target="#recruiters"
+              aria-controls="recruiters"
+              aria-expanded="false"
             >
               Recruiters
-            </a>
-            <a
+            </button>
+            <button
               class="nav-link toggle-btn mr-3"
               type="button"
               data-toggle="collapse"
               data-target="#more"
+              aria-controls="more"
+              aria-expanded="false"
             >
               More about me
-            </a>
+            </button>
           </div>
 
           <!-- Collapsible Sections -->
@@ -181,7 +187,7 @@
           </div>
         </div>
 
-        <div style="height: 110vh"></div>
+        <div class="section-spacer" aria-hidden="true"></div>
 
         <!-- Background -->
         <div class="container-background" id="background">
@@ -235,7 +241,9 @@
                 <div class="position-image-container">
                   <img
                     src="images/virta_logo_white_borderless_RGB.svg"
-                    style="width: 70%"
+                    class="position-image position-image-narrow"
+                    alt="Virta logo"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -287,7 +295,12 @@
               </div>
               <div class="content-section">
                 <div class="position-image-container">
-                  <img src="images/logo-86680-1.png" style="width: 80%" />
+                  <img
+                    src="images/logo-86680-1.png"
+                    class="position-image"
+                    alt="Aalto University logo"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -313,14 +326,19 @@
               </div>
               <div class="content-section">
                 <div class="position-image-container">
-                  <img src="images/IST_A_RGB_NEG.png" style="width: 80%" />
+                  <img
+                    src="images/IST_A_RGB_NEG.png"
+                    class="position-image"
+                    alt="Instituto Superior Tecnico logo"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div style="height: 110vh"></div>
+        <div class="section-spacer" aria-hidden="true"></div>
 
         <!-- Projects -->
         <div class="container-projects" id="projects">
@@ -356,7 +374,12 @@
               </div>
               <div class="content-section">
                 <div class="position-image-container">
-                  <img src="images/portfolio.png" style="width: 80%" />
+                  <img
+                    src="images/portfolio.png"
+                    class="position-image"
+                    alt="Screenshot of portfolio project"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -405,7 +428,12 @@
               </div>
               <div class="content-section">
                 <div class="position-image-container">
-                  <img src="images/titanic.png" style="width: 80%" />
+                  <img
+                    src="images/titanic.png"
+                    class="position-image"
+                    alt="Titanic survival prediction project output"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -430,7 +458,9 @@
               </div>
               <div class="content-section">
                 <div class="position-image-container">
-                  <img src="" style="width: 80%" />
+                  <div class="position-image-placeholder" aria-hidden="true">
+                    Image coming soon
+                  </div>
                 </div>
               </div>
             </div>
@@ -470,7 +500,12 @@
               </div>
               <div class="content-section">
                 <div class="position-image-container">
-                  <img src="images/focusEGG.png" style="width: 80%" />
+                  <img
+                    src="images/focusEGG.png"
+                    class="position-image"
+                    alt="focusEGG product concept"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -499,7 +534,12 @@
               </div>
               <div class="content-section">
                 <div class="position-image-container">
-                  <img src="images/etela-haaga.png" style="width: 80%" />
+                  <img
+                    src="images/etela-haaga.png"
+                    class="position-image"
+                    alt="Etela-Haaga library project deliverable"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -528,23 +568,27 @@
               </div>
               <div class="content-section">
                 <div class="position-image-container">
-                  <img src="images/planting-trees.png" style="width: 80%" />
+                  <img
+                    src="images/planting-trees.png"
+                    class="position-image"
+                    alt="Tree planting reporting mobile app concept"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div style="height: 110vh"></div>
+        <div class="section-spacer" aria-hidden="true"></div>
       </div>
 
       <!-- Contact -->
       <div class="container-contact" id="contact">
         <button
-          class="btn btn-outline-light btn-sc btn-floating contact-btn fade-scroll m-1"
+          class="btn btn-outline-light btn-floating contact-btn fade-scroll m-1"
           data-toggle="modal"
           data-target="#contactModal"
-          role="button"
         >
           Contact me!
         </button>
@@ -580,31 +624,31 @@
                 <div>
                   <div class="social-row">
                     <a
-                      class="btn btn-outline-light btn-sc btn-floating m-1"
+                      class="btn btn-outline-light btn-floating m-1"
                       target="_blank"
                       rel="noopener noreferrer"
                       href="https://www.linkedin.com/in/aarnoveitola/"
-                      role="button"
+                      aria-label="Open LinkedIn profile"
                     >
-                      <i class="fa fa-xl fa-linkedin"></i>
+                      <i class="fa fa-xl fa-linkedin" aria-hidden="true"></i>
                     </a>
                     <a
-                      class="btn btn-outline-light btn-sc btn-floating m-1"
+                      class="btn btn-outline-light btn-floating m-1"
                       target="_blank"
                       rel="noopener noreferrer"
                       href="https://github.com/AarnoVeitola"
-                      role="button"
+                      aria-label="Open GitHub profile"
                     >
-                      <i class="fa fa-xl fa-github"></i>
+                      <i class="fa fa-xl fa-github" aria-hidden="true"></i>
                     </a>
                     <a
-                      class="btn btn-outline-light btn-sc btn-floating m-1"
+                      class="btn btn-outline-light btn-floating m-1"
                       target="_blank"
                       rel="noopener noreferrer"
                       href="https://t.me/aarnoveitola"
-                      role="button"
+                      aria-label="Open Telegram profile"
                     >
-                      <i class="fa fa-xl fa-telegram"></i>
+                      <i class="fa fa-xl fa-telegram" aria-hidden="true"></i>
                     </a>
                   </div>
                 </div>
@@ -621,11 +665,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
 
     <!-- Custom JavaScript -->
-    <script src="./js/preventSectionClose.js"></script>
-    <script src="./js/navbarShadow.js"></script>
-    <script src="./js/navbarClose.js"></script>
-    <script src="./js/scroll.js"></script>
-    <script src="./js/fadeScroll.js"></script>
-    <script src="./js/fontReady.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
