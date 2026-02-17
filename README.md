@@ -48,7 +48,8 @@ The site is designed to be simple to deploy (for example, via GitHub Pages) and 
 │   ├── styles.css        # Main site styles
 │   └── satoshi.css       # Custom font definitions
 ├── js/
-│   └── main.js          # Single entry point for interactive behavior
+│   ├── contentData.js    # Data source for repeated portfolio content
+│   └── main.js           # Rendering + interactive behavior
 ├── index.html            # Main entry point
 ├── eslint.config.mjs     # ESLint flat configuration
 ├── .prettierrc.json      # Prettier configuration
@@ -94,6 +95,7 @@ npm run lint:css    # Run Stylelint only
 Recent refactoring focused on maintainability and usability while preserving the current visual design:
 
 - Custom interaction logic is centralized in `js/main.js` to reduce cross-file coupling.
+- Repeated content is defined with a structured schema in `js/contentData.js` and rendered dynamically.
 - About-section toggles use semantic `<button>` controls with synchronized `aria-expanded` states.
 - Inline style attributes were replaced with reusable CSS classes for easier global styling updates.
 - Project images include descriptive `alt` text and use `loading="lazy"` where appropriate.
