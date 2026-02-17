@@ -25,6 +25,15 @@ window.PORTFOLIO_DATA = {
       sidebarRow: 2,
     },
   ],
+  contactForm: {
+    endpoint: 'https://formspree.io/f/mykdjore',
+    minSubmitDelayMs: 2500,
+    successMessage: 'Thanks, your message has been sent.',
+    errorMessage:
+      'Message delivery failed. Please try again in a moment or use social links below.',
+    unconfiguredMessage:
+      'Contact form is not configured yet. Add your form endpoint in js/contentData.js.',
+  },
   backgroundEntries: [
     {
       id: 'virta',

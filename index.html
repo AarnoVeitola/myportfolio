@@ -183,12 +183,70 @@
             </div>
             <div class="modal-body">
               <div class="contact-info">
-                <h3>Aarno Veitola</h3>
-                <p class="mb-0">aarnoveitola@gmail.com</p>
-                <p>+358 452745533</p>
-                <div>
-                  <div class="social-row" id="modalSocialLinks"></div>
-                </div>
+                <h3>Send a message</h3>
+                <p class="contact-helper-text">
+                  Use this form to contact me. Please avoid sharing sensitive
+                  information.
+                </p>
+                <form id="contactForm" class="contact-form" novalidate>
+                  <input
+                    type="text"
+                    name="company"
+                    class="contact-honeypot"
+                    autocomplete="off"
+                    tabindex="-1"
+                    aria-hidden="true"
+                  />
+                  <input
+                    type="hidden"
+                    name="form_started_at"
+                    id="formStartedAt"
+                  />
+                  <label class="contact-label" for="contactName">Name</label>
+                  <input
+                    class="contact-input"
+                    id="contactName"
+                    name="name"
+                    type="text"
+                    required
+                    maxlength="120"
+                    autocomplete="name"
+                  />
+                  <label class="contact-label" for="contactEmail">Email</label>
+                  <input
+                    class="contact-input"
+                    id="contactEmail"
+                    name="email"
+                    type="email"
+                    required
+                    maxlength="254"
+                    autocomplete="email"
+                  />
+                  <label class="contact-label" for="contactMessage"
+                    >Message</label
+                  >
+                  <textarea
+                    class="contact-input contact-textarea"
+                    id="contactMessage"
+                    name="message"
+                    required
+                    minlength="10"
+                    maxlength="2500"
+                  ></textarea>
+                  <button
+                    type="submit"
+                    id="contactSubmit"
+                    class="btn btn-outline-light contact-submit-btn"
+                  >
+                    Send message
+                  </button>
+                </form>
+                <p
+                  id="contactFormStatus"
+                  class="contact-form-status"
+                  aria-live="polite"
+                ></p>
+                <div class="social-row" id="modalSocialLinks"></div>
               </div>
             </div>
           </div>

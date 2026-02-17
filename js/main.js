@@ -45,6 +45,24 @@ function sanitizeUrl(url) {
   return '#';
 }
 
+function sanitizeEndpoint(endpoint) {
+  const value = String(endpoint ?? '').trim();
+  if (!value) {
+    return '';
+  }
+
+  try {
+    const parsed = new URL(value);
+    if (parsed.protocol === 'https:' || parsed.protocol === 'http:') {
+      return value;
+    }
+  } catch {
+    return '';
+  }
+
+  return '';
+}
+
 function renderHtml(containerId, html) {
   const container = document.getElementById(containerId);
   if (!container) {
@@ -218,6 +236,106 @@ function renderContentFromData() {
     'projectEntries',
     buildEntriesHtml(asArray(portfolioData.projectEntries))
   );
+}
+
+function setContactStatus(statusElement, type, message) {
+  if (!statusElement) {
+    return;
+  }
+
+  statusElement.classList.remove('error', 'success');
+  if (type) {
+    statusElement.classList.add(type);
+  }
+  statusElement.textContent = message;
+}
+
+function initContactForm() {
+  const form = document.getElementById('contactForm');
+  const statusElement = document.getElementById('contactFormStatus');
+  const submitButton = document.getElementById('contactSubmit');
+  const startedAtInput = document.getElementById('formStartedAt');
+  if (!form || !statusElement || !submitButton || !startedAtInput) {
+    return;
+  }
+
+  const contactConfig = window.PORTFOLIO_DATA?.contactForm ?? {};
+  const endpoint = sanitizeEndpoint(contactConfig.endpoint);
+  const minSubmitDelayMs = Number(contactConfig.minSubmitDelayMs) || 2500;
+  const successMessage =
+    contactConfig.successMessage || 'Thanks, your message has been sent.';
+  const errorMessage =
+    contactConfig.errorMessage || 'Message delivery failed. Please try again.';
+  const unconfiguredMessage =
+    contactConfig.unconfiguredMessage ||
+    'Contact form is not configured yet. Add an endpoint in js/contentData.js.';
+
+  let startedAt = Date.now();
+  startedAtInput.value = String(startedAt);
+
+  if (!endpoint) {
+    submitButton.disabled = true;
+    setContactStatus(statusElement, 'error', unconfiguredMessage);
+    return;
+  }
+
+  form.setAttribute('action', endpoint);
+  form.setAttribute('method', 'POST');
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    setContactStatus(statusElement, '', '');
+
+    const honeypot = form.elements.namedItem('company');
+    if (honeypot && honeypot.value.trim()) {
+      setContactStatus(statusElement, 'success', successMessage);
+      form.reset();
+      startedAt = Date.now();
+      startedAtInput.value = String(startedAt);
+      return;
+    }
+
+    const elapsed = Date.now() - startedAt;
+    if (elapsed < minSubmitDelayMs) {
+      setContactStatus(
+        statusElement,
+        'error',
+        'Please wait a moment before submitting.'
+      );
+      return;
+    }
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    submitButton.disabled = true;
+
+    try {
+      const formData = new FormData(form);
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Contact form request failed');
+      }
+
+      setContactStatus(statusElement, 'success', successMessage);
+      form.reset();
+      startedAt = Date.now();
+      startedAtInput.value = String(startedAt);
+    } catch {
+      setContactStatus(statusElement, 'error', errorMessage);
+    } finally {
+      submitButton.disabled = false;
+    }
+  });
 }
 
 function revealPage() {
@@ -409,6 +527,7 @@ function initAboutToggleAccessibility() {
 
 function init() {
   renderContentFromData();
+  initContactForm();
   initFadeScroll();
   initNavbarShadow();
   initAnchorNavigation();

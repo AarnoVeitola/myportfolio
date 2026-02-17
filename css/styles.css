@@ -165,6 +165,70 @@ button {
   align-items: center;
 }
 
+.contact-helper-text {
+  max-width: 32rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 32rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: left;
+}
+
+.contact-label {
+  font-family: Satoshi-Regular, sans-serif;
+  margin-top: 0.35rem;
+}
+
+.contact-input {
+  border: 1px solid var(--text-color);
+  background-color: transparent;
+  color: var(--text-color);
+  border-radius: 0.35rem;
+  padding: 0.6rem 0.75rem;
+}
+
+.contact-input:focus-visible {
+  outline: 2px solid var(--text-color);
+  outline-offset: 2px;
+}
+
+.contact-textarea {
+  min-height: 8.5rem;
+  resize: vertical;
+}
+
+.contact-submit-btn {
+  margin-top: 0.75rem;
+  align-self: flex-start;
+}
+
+.contact-form-status {
+  margin-top: 0.85rem;
+  min-height: 1.5rem;
+}
+
+.contact-form-status.error {
+  color: #ff8b8b;
+}
+
+.contact-form-status.success {
+  color: #8dffba;
+}
+
+.contact-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .contact-btn {
   border-color: var(--text-color);
   padding: 1rem 1.5rem;

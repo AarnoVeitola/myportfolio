@@ -87,6 +87,7 @@ npm run lint:css    # Run Stylelint only
 - jQuery is provided globally (via CDN), and ESLint is configured accordingly.
 - CSS rules favor clarity and maintainability over strict theoretical ordering.
 - The tooling setup is intentionally simple and suitable for small to medium static sites.
+- Contact form endpoint is configured in `js/contentData.js` under `contactForm.endpoint` (empty by default).
 
 ---
 
