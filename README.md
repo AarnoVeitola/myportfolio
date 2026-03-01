@@ -16,7 +16,7 @@ The portfolio website includes:
 - A custom web font setup
 - A modern development workflow using Prettier, ESLint, and Stylelint
 
-The site is designed to be simple to deploy (for example, via GitHub Pages) and easy to extend as new sections or projects are added.
+The site is designed to be simple to deploy (for example, via GitHub Pages) and easy to extend as new sections or projects are added. A live version of the site is deployed at [aarnoveitola.fi](https://aarnoveitola.fi).
 
 ---
 
